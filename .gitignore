@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+tsconfig.tsbuildinfo
+
+# Logs
+*.log
+vite-dev*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.DS_Store
+.playwright-mcp/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Doppler & Env Security
+.doppler.yaml
+.env
+.env.*
+!.env.example
+!.env.*.example
