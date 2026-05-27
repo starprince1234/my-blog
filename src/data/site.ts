@@ -957,19 +957,19 @@ export const skillGroups: SkillGroup[] = [
     title: '后端与云服务',
     description: '围绕真实上线目标组织接口、数据和部署。',
     items: [
-      { name: 'Node.js / API', usedIn: '{待补充：关联项目}' },
-      { name: 'PostgreSQL / Supabase', usedIn: '{待补充：关联项目}' },
-      { name: 'Vercel / Cloudflare', usedIn: '{待补充：部署项目}' },
-      { name: 'Docker', usedIn: '{待补充：容器化项目}' },
+      { name: 'Node.js / API', usedIn: '用于 Jishe、稽古云语、油擎洞察等后端接口与 AI 服务编排' },
+      { name: 'PostgreSQL / Supabase', usedIn: '用于 NebulaCloud 网关计费、权限和业务数据建模' },
+      { name: 'Vercel / Cloudflare', usedIn: '用于个人站和前端项目的静态部署与路由托管' },
+      { name: 'Docker', usedIn: '用于 Jishe、稽古云语、时序分析系统和 NebulaCloud 的服务编排' },
     ],
   },
   {
     title: 'AI / LLM 应用',
     description: '把模型能力设计成可控、可校对、可复用的产品流程。',
     items: [
-      { name: 'OpenAI API / LLM API', usedIn: '{待补充：AI 项目}' },
+      { name: 'OpenAI API / LLM API', usedIn: '用于 Jishe Agent、油擎洞察研报生成和稽古云语 AI 对话' },
       { name: 'Prompt Engineering', usedIn: '用于稳定输出结构和任务流程' },
-      { name: 'RAG / Agent Workflow', usedIn: '{待补充：探索项目}' },
+      { name: 'RAG / Agent Workflow', usedIn: '用于 Jishe 三层记忆、稽古云语文物问答和 AI 金融分析师演进' },
       { name: 'AI Coding Tools', usedIn: '用于加速原型、测试和文档整理' },
     ],
   },
@@ -987,29 +987,11 @@ export const skillGroups: SkillGroup[] = [
 
 export const timeline: TimelineItem[] = [
   {
-    period: '大一上寒假 · 2025.01 - 2025.02',
-    title: '完成早期公网项目 MVP',
-    description: '从一个具体问题出发，完成需求拆解、前端实现、部署上线和初步优化。',
-    tags: ['MVP', 'Deploy', 'Solo Built'],
-  },
-  {
     period: '大一上寒假 · 2025.02',
     title: '开发首个微信小程序，开启技术探索之路',
     description:
       '为了解决 Makershub 创客空间日常管理与活动展示需求，我零基础自学微信小程序开发，在一周内独立完成 Mini Makers 小程序前端。这不仅是我第一个落地并交付给真实用户使用的作品，更是我自学网页开发、走向独立开发者之路的起点。',
     tags: ['独立前端开发', '微信小程序', '启蒙之作'],
-  },
-  {
-    period: '大一下 · 2025.03',
-    title: '开始系统尝试 AI 应用开发',
-    description: '把 AI 能力嵌入真实工作流，重点关注输出稳定性、用户校对和结果复用。',
-    tags: ['AI App', 'Workflow'],
-  },
-  {
-    period: '大一下 · 2025.04 - 2025.05',
-    title: '整理项目数据和案例复盘',
-    description: '把项目从“能访问”推进到“能讲清楚为什么做、怎么做、遇到什么挑战”。',
-    tags: ['Case Study', 'Writing'],
   },
   {
     period: '大一下 · 2025.06',
@@ -1034,13 +1016,6 @@ export const timeline: TimelineItem[] = [
   },
   {
     period: '大二下 · 2026.02 - 2026.07',
-    title: '狂飙与井喷：全面迎战各项竞赛，技术向生产力转化',
-    description:
-      '进入大二下学期，我的技术积累迎来井喷式爆发。半年里，我密集参与包括“小挑”在内的多项高水平学科与创新创业竞赛，开始以技术主脑身份多线并行作战：一边拆商业需求，一边写代码，一边上线真实服务。其中，我为出海项目独立二开并部署了跨境电商网站 bigtallplus.com，把 WordPress / WooCommerce 主题、会员登录、商品展示、购物车、结账和 SiteGround 线上部署串成完整商业链路。这个阶段让我从“做项目”切换到“扛交付”，在高压下训练了快速选型、生产级运维、商业架构和公网交付能力。',
-    tags: ['Competition Explosion', '生产级部署', '商业落地'],
-  },
-  {
-    period: '大二下 · 2026.02 - 2026.07',
     title: '领袖之姿：主导省级大创与软创项目《稽古云语》全栈研发',
     description:
       '以项目负责人身份，我撰写规范化开发文档，主导研发「稽古云语」文物智能识别与对话系统。我设计并实现 Java + Python 双后端解耦架构：Java 负责用户、鉴权、文物库、收藏、反馈和任务状态机，Python 负责 VLM 文物识别、RAG 检索与多轮 AI 对话；同时推动 UniApp 微信小程序和 Android 原生应用落地，支持微信搜索直达与现场真机演示。该项目作为省级大创负责人项目立项，并斩获全国大学生软件创新大赛省级三等奖，集中展现了我的架构设计、AI 工程研发与团队统筹能力。',
@@ -1059,12 +1034,6 @@ export const timeline: TimelineItem[] = [
     description:
       '作为核心程序，我参与 7 人跨学科团队（策划、美术、程序），冲刺中国大学生计算机设计大赛数字媒体游戏开发赛道。除负责 Unity 关卡交互、剧情流程、物理解谜和核心逻辑的 C# 编写外，我还敏锐地将 AIGC 引入游戏工作流，客串技术美术与音效师：通过 AI 视频生成工具快速产出剧情转场，并利用 Premiere 和 Audition 独立完成高质量音画剪辑、混音与降噪。在多工种高频协作中展现出工程管线掌控力，最终团队斩获省级二等奖。',
     tags: ['省级二等奖', 'Unity', 'AIGC 游戏管线'],
-  },
-  {
-    period: '当前 · 2026.05',
-    title: '持续构建个人项目系统',
-    description: '把新的想法、实验、工具和复盘沉淀到同一个长期维护的个人主页中。',
-    tags: ['Now', 'Portfolio', 'Iteration'],
   },
   {
     period: '大二下 · 2026.05 - 2026.07',
