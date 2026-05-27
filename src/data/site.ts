@@ -5,9 +5,9 @@ export const profile = {
   role: '全栈开发者 / AI 产品开发者',
   oneLine: '我喜欢把模糊的想法做成可访问、可使用、可维护的产品，并在真实使用中持续迭代。',
   focus: ['AI 应用', 'Web 产品', '开发者工具', '效率软件', '创意交互'],
-  github: '{待补充：GitHub 链接}',
-  email: '{待补充：邮箱}',
-  social: '{待补充：社交媒体链接}',
+  github: 'https://github.com/starprince1234',
+  email: '2320809136@qq.com',
+  social: '',
 }
 
 export const stats = [
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     category: '人工智能 / 爬虫与安全',
     status: 'archived',
     order: -1.5,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '插件主开发者 & 基础设施部署工程师',
     cycle: '2025.11 - 2025.12，大二上期末智能体开发比赛项目',
@@ -319,7 +319,7 @@ export const projects: Project[] = [
     category: '人工智能 / 软件工程',
     status: 'live',
     order: -2,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '项目创始人 & 负责人 / 核心全栈与 AI 算法工程师',
     cycle: '2026.02 - 2026.07，大二下省级大创与软创项目',
@@ -598,7 +598,7 @@ export const projects: Project[] = [
     category: '微信小程序',
     status: 'archived',
     order: 1,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '前端开发 / 独立开发',
     cycle: '2025.02，大一上寒假，一周左右完成主要前端骨架',
@@ -675,7 +675,7 @@ export const projects: Project[] = [
     category: '全栈开发 / 网络游戏',
     status: 'archived',
     order: 2,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '独立全栈开发',
     cycle: '2025.06，大一下学期 Java 实践项目',
@@ -761,7 +761,7 @@ export const projects: Project[] = [
     category: '跨平台应用 / 数据可视化 / 科研工程化',
     status: 'in-progress',
     order: 3,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '独立软件研发负责人 / 大创技术骨干',
     cycle: '2025 下半年，大二上学期大创项目',
@@ -849,7 +849,7 @@ export const projects: Project[] = [
     category: '跨境电商 / 商业落地',
     status: 'live',
     order: 0,
-    featured: true,
+    featured: false,
     hasDetail: true,
     role: '全栈开发负责人 / 运维负责人',
     cycle: '2026.02 - 2026.07，大二下竞赛井喷期',
@@ -930,295 +930,13 @@ export const projects: Project[] = [
     ],
     nextSteps: ['补充结构化数据与更完整的国际 SEO。', '为支付、物流和订单邮件配置编写运维 runbook。', '增加自动化部署与上线前检查清单。'],
   },
-  {
-    slug: 'ai-workflow-assistant',
-    name: '{待补充：AI 工作流项目名称}',
-    summary: '一个帮助用户在真实工作流中完成 {待补充：核心任务} 的 AI 应用。',
-    category: 'AI 应用',
-    status: 'live',
-    order: 10,
-    featured: true,
-    hasDetail: true,
-    role: '产品设计、前端开发、AI 流程设计、部署上线',
-    cycle: '{待补充：开发周期，例如 2 周}',
-    accent: '#2563eb',
-    tags: ['AI Powered', 'Solo Built', 'Workflow'],
-    techStack: ['Vue', 'TypeScript', 'Tailwind CSS', '{待补充：AI/API}'],
-    links: {
-      live: '{待补充：Live Demo 链接}',
-      github: '{待补充：GitHub 链接}',
-    },
-    media: {
-      pattern: 'ai',
-      alt: '{待补充：AI 工作流项目截图说明}',
-    },
-    overview: '这个项目用于解决 {待补充：具体场景} 中效率低、流程分散、结果难复用的问题。',
-    problem:
-      '我观察到目标用户在 {待补充：场景} 中经常需要反复整理信息、切换工具，并手动完成大量重复判断。',
-    solution: '我把核心流程拆成输入、生成、校对、导出几个步骤，让用户可以在一个轻量界面中完成闭环。',
-    features: [
-      {
-        title: '智能生成',
-        description: '根据用户输入生成结构化结果。',
-        value: '降低从空白开始的成本。',
-      },
-      {
-        title: '结果编辑',
-        description: '保留人工校对和二次修改空间。',
-        value: '让 AI 输出更适合真实使用。',
-      },
-      {
-        title: '一键导出',
-        description: '把生成结果整理成可分享格式。',
-        value: '减少复制粘贴和格式清理。',
-      },
-    ],
-    architecture: [
-      '前端使用 Vue 3 和 TypeScript 构建，组件按页面区块和复用 UI 拆分。',
-      '样式使用 Tailwind CSS，优先保证响应式、可读性和移动端触控体验。',
-      'AI 调用与业务逻辑计划收敛到独立服务层，方便后续替换模型或接入 RAG。',
-      '部署目标为 Vercel / Cloudflare Pages / 自建服务中的一种，真实地址待补充。',
-    ],
-    highlights: [
-      '从需求拆解到上线独立完成。',
-      '支持真实用户通过公网访问，而不是停留在本地 Demo。',
-      '围绕一个具体工作流设计，而不是只做聊天入口。',
-    ],
-    challenges: [
-      {
-        title: '让 AI 输出稳定可用',
-        problem: '早期结果容易格式不一致，用户需要手动修正。',
-        process: '通过更明确的结构约束、示例提示和前端校验降低不确定性。',
-        result: '输出更接近可直接使用的状态。',
-        learning: 'AI 产品不能只追求“能生成”，还要设计校对、修复和兜底路径。',
-      },
-    ],
-    learnings: ['学会把模型能力包装成具体流程。', '更重视产品的错误状态和边界体验。'],
-    nextSteps: ['补充真实用户反馈。', '整理 GitHub 文档。', '增加历史记录和模板能力。'],
-  },
-  {
-    slug: 'web-toolkit',
-    name: '{待补充：Web 工具项目名称}',
-    summary: '一个面向 {待补充：目标用户} 的 Web 工具，用更少步骤完成 {待补充：任务}。',
-    category: 'Web 工具',
-    status: 'live',
-    order: 20,
-    featured: true,
-    hasDetail: true,
-    role: '产品设计、前端开发、后端接口、部署上线',
-    cycle: '{待补充：开发周期}',
-    accent: '#059669',
-    tags: ['Web Tool', 'Responsive', 'Product'],
-    techStack: ['Vue', 'TypeScript', 'Tailwind CSS', '{待补充：后端/数据库}'],
-    links: {
-      live: '{待补充：Live Demo 链接}',
-    },
-    media: {
-      pattern: 'tool',
-      alt: '{待补充：Web 工具截图说明}',
-    },
-    overview: '这是一个轻量 Web 工具，目标是把 {待补充：复杂流程} 简化成清晰、低摩擦的使用路径。',
-    problem: '现有方案在 {待补充：痛点 1}、{待补充：痛点 2} 和移动端体验上不够理想。',
-    solution: '我用聚焦单任务的产品结构，把核心功能放在首屏，并减少无关配置。',
-    features: [
-      {
-        title: '快速输入',
-        description: '把最常用字段前置。',
-        value: '用户打开页面就能开始操作。',
-      },
-      {
-        title: '实时反馈',
-        description: '操作过程中即时展示状态和结果。',
-        value: '降低试错成本。',
-      },
-      {
-        title: '移动端适配',
-        description: '针对手机端按钮尺寸、布局和阅读节奏做优化。',
-        value: '用户可以随时打开体验。',
-      },
-    ],
-    architecture: [
-      '页面采用数据驱动渲染，核心配置集中在独立数据文件。',
-      '交互状态尽量保持局部化，避免过早引入复杂全局状态。',
-      '响应式布局覆盖手机、平板和桌面。',
-    ],
-    highlights: ['围绕真实任务压缩操作步骤。', '界面和功能一起迭代。', '上线后可以继续收集使用反馈。'],
-    challenges: [
-      {
-        title: '在简洁和完整之间取舍',
-        problem: '功能越加越多后，页面会变得像后台表单。',
-        process: '把高频路径放在主流程，低频配置收进次级区域。',
-        result: '用户首次打开时不会被选项淹没。',
-        learning: '产品设计很多时候是决定先不展示什么。',
-      },
-    ],
-    learnings: ['更理解轻量工具的首屏效率。', '移动端不是缩小桌面端，而是重排任务路径。'],
-    nextSteps: ['补充更多使用场景。', '增加示例模板。', '完善可访问性检查。'],
-  },
-  {
-    slug: 'productivity-system',
-    name: '{待补充：效率系统项目名称}',
-    summary: '一个用于 {待补充：效率场景} 的效率软件 / SaaS 原型。',
-    category: '效率软件',
-    status: 'in-progress',
-    order: 30,
-    featured: true,
-    hasDetail: true,
-    role: '产品规划、前端开发、数据结构设计、部署上线',
-    cycle: '{待补充：开发周期}',
-    accent: '#d97706',
-    tags: ['Productivity', 'SaaS Prototype', 'Iterating'],
-    techStack: ['Vue', 'TypeScript', 'Tailwind CSS', '{待补充：数据库/云服务}'],
-    links: {
-      live: '{待补充：Live Demo 链接}',
-      docs: '{待补充：文档链接}',
-    },
-    media: {
-      pattern: 'flow',
-      alt: '{待补充：效率系统截图说明}',
-    },
-    overview: '这个项目尝试把 {待补充：工作流} 变成一个可持续使用的效率系统。',
-    problem: '用户经常在多个工具之间切换，信息分散，复盘和追踪成本高。',
-    solution: '我设计了一个围绕任务状态、记录和复盘的统一界面，让用户更容易持续使用。',
-    features: [
-      {
-        title: '任务视图',
-        description: '按照状态组织当前事项。',
-        value: '快速知道下一步该做什么。',
-      },
-      {
-        title: '记录沉淀',
-        description: '把过程信息留在同一个上下文。',
-        value: '减少遗忘和重复沟通。',
-      },
-      {
-        title: '复盘入口',
-        description: '定期整理结果、问题和下一步。',
-        value: '让工具不仅服务执行，也服务成长。',
-      },
-    ],
-    architecture: [
-      '核心数据模型围绕任务、状态、记录和标签展开。',
-      '前端组件按列表、详情、编辑器和状态提示拆分。',
-      '后续可以接入 Supabase / PostgreSQL 做鉴权与数据持久化。',
-    ],
-    highlights: ['从个人真实需求出发。', '兼顾产品流程和数据结构。', '有明确的长期迭代方向。'],
-    challenges: [
-      {
-        title: '定义最小可用功能',
-        problem: '效率工具容易陷入“什么都想管”的复杂度。',
-        process: '先围绕一个高频闭环做 MVP，再根据使用反馈扩展。',
-        result: '项目能更快上线，而不是停在规划文档里。',
-        learning: 'MVP 的价值在于验证行为，不是堆功能。',
-      },
-    ],
-    learnings: ['学会用数据结构反推产品边界。', '更重视长期使用时的低摩擦体验。'],
-    nextSteps: ['接入持久化存储。', '增加提醒和归档。', '补充公开路线图。'],
-  },
-  {
-    slug: 'interactive-lab',
-    name: '{待补充：交互实验项目名称}',
-    summary: '一个强调交互体验和创意表达的网页产品 / 实验项目。',
-    category: '交互实验',
-    status: 'experimental',
-    order: 40,
-    featured: false,
-    hasDetail: true,
-    role: '交互设计、前端开发、动效实现、部署上线',
-    cycle: '{待补充：开发周期}',
-    accent: '#e11d48',
-    tags: ['Interactive', 'Creative Coding', 'Animation'],
-    techStack: ['Vue', 'TypeScript', 'CSS Animation', '{待补充：其他技术}'],
-    links: {
-      live: '{待补充：Live Demo 链接}',
-      article: '{待补充：复盘文章链接}',
-    },
-    media: {
-      pattern: 'canvas',
-      alt: '{待补充：交互实验截图说明}',
-    },
-    overview: '这个项目用交互和视觉表达探索 {待补充：主题}，重点是让用户在浏览中产生参与感。',
-    problem: '普通静态页面很难让用户理解 {待补充：主题/内容} 的动态关系。',
-    solution: '我把内容拆成可操作、可反馈的交互单元，用轻量动效增强理解。',
-    features: [
-      {
-        title: '即时交互',
-        description: '用户操作后立即看到反馈。',
-        value: '提升探索感和记忆点。',
-      },
-      {
-        title: '分层叙事',
-        description: '用不同模块逐步展示信息。',
-        value: '降低理解复杂概念的门槛。',
-      },
-      {
-        title: '性能控制',
-        description: '动效主要使用 transform 和 opacity。',
-        value: '兼顾视觉和加载速度。',
-      },
-    ],
-    architecture: [
-      '交互逻辑保持组件内聚，避免视觉实验污染基础页面结构。',
-      '动效遵守 prefers-reduced-motion，保证可访问性。',
-      '核心视觉使用 CSS 和轻量组件完成，减少资源体积。',
-    ],
-    highlights: ['有个人表达和记忆点。', '动效服务内容理解。', '手机端仍保持可读和可操作。'],
-    challenges: [
-      {
-        title: '控制动效强度',
-        problem: '早期动画过多，反而影响阅读。',
-        process: '保留页面进入、hover 和局部反馈，把装饰性动画降到最低。',
-        result: '页面更稳、更清楚。',
-        learning: '好的动效应该让内容更容易被理解，而不是抢走注意力。',
-      },
-    ],
-    learnings: ['交互设计要先服务信息层级。', '性能和审美需要一起考虑。'],
-    nextSteps: ['补充真实截图或演示视频。', '整理交互设计复盘。', '增加更多可分享场景。'],
-  },
-  {
-    slug: 'tiny-dev-utility',
-    name: '{待补充：轻量开发者工具名称}',
-    summary: '一个解决开发过程中某个高频小问题的轻量工具。',
-    category: '开发者工具',
-    status: 'live',
-    order: 50,
-    featured: false,
-    hasDetail: false,
-    accent: '#7c3aed',
-    tags: ['Developer Tool', 'Utility'],
-    techStack: ['TypeScript', 'Vue'],
-    links: {
-      live: '{待补充：Live Demo 链接}',
-    },
-    media: {
-      pattern: 'tool',
-      alt: '{待补充：开发者工具截图说明}',
-    },
-  },
-  {
-    slug: 'old-prototype',
-    name: '{待补充：早期原型项目名称}',
-    summary: '一个早期探索原型，保留作为阶段性记录。',
-    category: '原型探索',
-    status: 'paused',
-    order: 90,
-    featured: false,
-    hasDetail: false,
-    accent: '#64748b',
-    tags: ['Prototype', 'Paused'],
-    techStack: ['Vue', '{待补充：其他技术}'],
-    media: {
-      pattern: 'flow',
-      alt: '{待补充：早期原型截图说明}',
-    },
-  },
 ]
 
 export const visibleProjects = projects
   .filter((project) => !project.draft && !project.archived)
   .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
 
-export const featuredProjects = visibleProjects.filter((project) => project.featured)
+export const featuredProjects = visibleProjects.filter((project) => project.featured).slice(0, 4)
 
 export const projectCategories = Array.from(new Set(visibleProjects.map((project) => project.category)))
 
@@ -1269,97 +987,97 @@ export const skillGroups: SkillGroup[] = [
 
 export const timeline: TimelineItem[] = [
   {
-    period: 'Now',
-    title: '持续构建个人项目系统',
-    description: '把新的想法、实验、工具和复盘沉淀到同一个长期维护的个人主页中。',
-    tags: ['Now', 'Portfolio', 'Iteration'],
+    period: '大一上寒假 · 2025.01 - 2025.02',
+    title: '完成早期公网项目 MVP',
+    description: '从一个具体问题出发，完成需求拆解、前端实现、部署上线和初步优化。',
+    tags: ['MVP', 'Deploy', 'Solo Built'],
   },
   {
-    period: '2025.11 - 2025.12 · 大二上期末',
-    title: '技术破局：研发智能体大赛数据源插件并首战公网部署',
+    period: '大一上寒假 · 2025.02',
+    title: '开发首个微信小程序，开启技术探索之路',
     description:
-      '以插件主开发者 & 基础设施部署身份参加智能体开发大赛，独立负责牛客网高并发自动化抓取插件。我基于 Playwright 实现了绕过检测的无头浏览器指纹对抗，独创性地在网络层对目标 API 进行 Response Hook 拦截，直接捕获纯净数据元，并利用多线程守护实现进程中断时的数据优雅落盘。该项目作为 COZE 智能体核心工具上线，并推动我首次独立在 VPS 云服务器上跑通公网部署与环境变量配置，为大二下一系列中大型微服务和双后端解耦项目的全面上线奠定了决定性的工程底座。',
-    tags: ['Playwright', 'API Hook', 'VPS Deployment', 'Cookie Lifecycle'],
+      '为了解决 Makershub 创客空间日常管理与活动展示需求，我零基础自学微信小程序开发，在一周内独立完成 Mini Makers 小程序前端。这不仅是我第一个落地并交付给真实用户使用的作品，更是我自学网页开发、走向独立开发者之路的起点。',
+    tags: ['独立前端开发', '微信小程序', '启蒙之作'],
   },
   {
-    period: '2026.05 - 2026.07 · 大二下',
-    title: '工程师的成人礼：主导 NebulaCloud 高并发 AI 微服务网关开发',
-    description:
-      '加入技术社团并参与大型微服务系统 NebulaCloud 建设，独立负责其中最核心、高并发的 AI 路由与 API 转发中转站模块（nebula-ai）。在此项目中，我经历了向专业软件工程师的蜕变：首次引入并践行规范的 Git Flow 多人协作与 PR 审查机制；自主编写 GitHub Actions Workflows，跑通了云原生 CI/CD 自动化构建、镜像打包与持续部署管线；通过逆向解构优秀开源项目 new-api，设计并实现了多通道容灾与动态限流算法。该项目作为社团公共基础设施上线，承载了真实活跃的高频流量，彻底打通了我的云原生与大型分布式系统工程视野。',
-    tags: ['核心网关研发', 'DevOps 实践', 'Git Flow', '逆向开源'],
+    period: '大一下 · 2025.03',
+    title: '开始系统尝试 AI 应用开发',
+    description: '把 AI 能力嵌入真实工作流，重点关注输出稳定性、用户校对和结果复用。',
+    tags: ['AI App', 'Workflow'],
   },
   {
-    period: '2026.05 - 2026.08 · 大二下',
-    title: '领跑 FinTech：主导设计国赛级机器学习预测与 AI 研报平台',
-    description:
-      '作为总策划与首席全栈架构师，我全权主导了“花旗杯金融创新应用大赛”推优国赛项目《油擎洞察》的系统设计与全栈落地。我规划并实现多因子驱动机器学习预测与大语言模型协同工作流：用户上传复杂因子表格，系统在后端触发 ML 模型推理，生成多周期收益率预测、分位数风险区间、行业冲击和因子解释，再将结构化结果无缝流转给大模型，实时生成深度金融分析研报并在 Web 端呈现。同时，我正为其部署交互式 AI 金融分析师 Agent 系统。从 Technical Report 技术路线撰写，到算法部署、前后端上线和演示视频制作，我跑通了“量化预测 + AI Agent + 生产级 Web”的极客闭环，并在顶尖金融科技大赛中斩获全国决赛资格。',
-    tags: ['花旗杯推优国赛', '量化预测+大模型', '总策划', 'AI 金融分析师'],
+    period: '大一下 · 2025.04 - 2025.05',
+    title: '整理项目数据和案例复盘',
+    description: '把项目从“能访问”推进到“能讲清楚为什么做、怎么做、遇到什么挑战”。',
+    tags: ['Case Study', 'Writing'],
   },
   {
-    period: '2026.02 - 2026.07 · 大二下',
-    title: '狂飙与井喷：全面迎战各项竞赛，技术向生产力转化',
-    description:
-      '进入大二下学期，我的技术积累迎来井喷式爆发。半年里，我密集参与包括“小挑”在内的多项高水平学科与创新创业竞赛，开始以技术主脑身份多线并行作战：一边拆商业需求，一边写代码，一边上线真实服务。其中，我为出海项目独立二开并部署了跨境电商网站 bigtallplus.com，把 WordPress / WooCommerce 主题、会员登录、商品展示、购物车、结账和 SiteGround 线上部署串成完整商业链路。这个阶段让我从“做项目”切换到“扛交付”，在高压下训练了快速选型、生产级运维、商业架构和公网交付能力。',
-    tags: ['Competition Explosion', '生产级部署', '商业落地'],
-  },
-  {
-    period: '2026.02 - 2026.07 · 大二下',
-    title: '领袖之姿：主导省级大创与软创项目《稽古云语》全栈研发',
-    description:
-      '以项目负责人身份，我撰写规范化开发文档，主导研发「稽古云语」文物智能识别与对话系统。我设计并实现 Java + Python 双后端解耦架构：Java 负责用户、鉴权、文物库、收藏、反馈和任务状态机，Python 负责 VLM 文物识别、RAG 检索与多轮 AI 对话；同时推动 UniApp 微信小程序和 Android 原生应用落地，支持微信搜索直达与现场真机演示。该项目作为省级大创负责人项目立项，并斩获全国大学生软件创新大赛省级三等奖，集中展现了我的架构设计、AI 工程研发与团队统筹能力。',
-    tags: ['省级大创负责人', '软创省三', '双后端架构'],
-  },
-  {
-    period: '2026.03 - 2026.07 · 大二下',
-    title: '主导设计国赛级 AI Agent 系统，攻克多模态流式交互技术',
-    description:
-      '作为队长，我主导了参加“中国大学生计算机设计大赛（软件与应用开发赛道）”的项目设计与全栈实现。我独立架构了一套 AI Agent 智能体系统，攻克了上下文记忆机制、函数/工具调用（Function Calling）逻辑，并在 Web 端实现了文字、思考过程、流式音频语音与图像结果的多模态低延迟同步呈现。项目成功在公网部署到 cbvjgf.art，并凭借智能体成员化、三层记忆 RAG、工具调用和流式体验，成功推优国赛，成为我竞赛井喷期的黄金里程碑。',
-    tags: ['国赛推优', 'AI Agent', '队长主架构'],
-  },
-  {
-    period: '2026.04 - 2026.07 · 大二下',
-    title: '打破学科边界：主导 7 人团队国风解谜游戏《寻梁》开发',
-    description:
-      '作为核心程序，我参与 7 人跨学科团队（策划、美术、程序），冲刺中国大学生计算机设计大赛数字媒体游戏开发赛道。除负责 Unity 关卡交互、剧情流程、物理解谜和核心逻辑的 C# 编写外，我还敏锐地将 AIGC 引入游戏工作流，客串技术美术与音效师：通过 AI 视频生成工具快速产出剧情转场，并利用 Premiere 和 Audition 独立完成高质量音画剪辑、混音与降噪。在多工种高频协作中展现出工程管线掌控力，最终团队斩获省级二等奖。',
-    tags: ['省级二等奖', 'Unity', 'AIGC 游戏管线'],
-  },
-  {
-    period: '2025 下半年 · 大二上',
-    title: '大创项目技术负责人，主导时序分析算法的多端跨平台产品化',
-    description:
-      '在大创项目中，我承担了将 Python 原生时序分析代码工程化的重任。通过 Flask / Socket.IO 将底层算法逻辑封装为标准上传接口和长任务事件协议，解耦前后端；同时横向拓宽技术栈，自学 Flutter / Dart 实现 Web、Android、Windows 等多端客户端架构，探索“一套代码，多端部署”的工程实践，完成了从代码编写者到多端系统规划者的蜕变。',
-    tags: ['大创项目', '跨平台架构', '科研工程化'],
-  },
-  {
-    period: '2025 上半年 · 大一下',
+    period: '大一下 · 2025.06',
     title: '自主设计并实现三端实时联机网络游戏，突破传统 Java 课程边界',
     description:
       '在大一下学期学习 Java 期间，我自主立项并设计了一套跨 Web、Android、Desktop 的贪吃蛇实践。Web 端由 Java Servlet 后端维护状态并通过 JSON 接口同步给 Canvas 客户端，Android 与 Desktop 端分别用原生 View 和 Swing 实现同一套游戏规则。这个项目让我深入理解了网络接口、定时状态机、事件驱动、前后端分离和多终端适配等底层架构思想，极大拓宽了我的工程视野。',
     tags: ['独立全栈开发', 'Java', '跨平台实践'],
   },
   {
-    period: '2025.04 - 2025.05',
-    title: '整理项目数据和案例复盘',
-    description: '把项目从“能访问”推进到“能讲清楚为什么做、怎么做、遇到什么挑战”。',
-    tags: ['Case Study', 'Writing'],
-  },
-  {
-    period: '2025.03',
-    title: '开始系统尝试 AI 应用开发',
-    description: '把 AI 能力嵌入真实工作流，重点关注输出稳定性、用户校对和结果复用。',
-    tags: ['AI App', 'Workflow'],
-  },
-  {
-    period: '2025.01 - 2025.02',
-    title: '完成早期公网项目 MVP',
-    description: '从一个具体问题出发，完成需求拆解、前端实现、部署上线和初步优化。',
-    tags: ['MVP', 'Deploy', 'Solo Built'],
-  },
-  {
-    period: '2025.02 · 大一上寒假',
-    title: '开发首个微信小程序，开启技术探索之路',
+    period: '大二上 · 2025.09 - 2025.12',
+    title: '大创项目技术负责人，主导时序分析算法的多端跨平台产品化',
     description:
-      '为了解决 Makershub 创客空间日常管理与活动展示需求，我零基础自学微信小程序开发，在一周内独立完成 Mini Makers 小程序前端。这不仅是我第一个落地并交付给真实用户使用的作品，更是我自学网页开发、走向独立开发者之路的起点。',
-    tags: ['独立前端开发', '微信小程序', '启蒙之作'],
+      '在大创项目中，我承担了将 Python 原生时序分析代码工程化的重任。通过 Flask / Socket.IO 将底层算法逻辑封装为标准上传接口和长任务事件协议，解耦前后端；同时横向拓宽技术栈，自学 Flutter / Dart 实现 Web、Android、Windows 等多端客户端架构，探索“一套代码，多端部署”的工程实践，完成了从代码编写者到多端系统规划者的蜕变。',
+    tags: ['大创项目', '跨平台架构', '科研工程化'],
+  },
+  {
+    period: '大二上期末 · 2025.11 - 2025.12',
+    title: '技术破局：研发智能体大赛数据源插件并首战公网部署',
+    description:
+      '以插件主开发者 & 基础设施部署身份参加智能体开发大赛，独立负责牛客网高并发自动化抓取插件。我基于 Playwright 实现了绕过检测的无头浏览器指纹对抗，独创性地在网络层对目标 API 进行 Response Hook 拦截，直接捕获纯净数据元，并利用多线程守护实现进程中断时的数据优雅落盘。该项目作为 COZE 智能体核心工具上线，并推动我首次独立在 VPS 云服务器上跑通公网部署与环境变量配置，为大二下一系列中大型微服务和双后端解耦项目的全面上线奠定了决定性的工程底座。',
+    tags: ['Playwright', 'API Hook', 'VPS Deployment', 'Cookie Lifecycle'],
+  },
+  {
+    period: '大二下 · 2026.02 - 2026.07',
+    title: '狂飙与井喷：全面迎战各项竞赛，技术向生产力转化',
+    description:
+      '进入大二下学期，我的技术积累迎来井喷式爆发。半年里，我密集参与包括“小挑”在内的多项高水平学科与创新创业竞赛，开始以技术主脑身份多线并行作战：一边拆商业需求，一边写代码，一边上线真实服务。其中，我为出海项目独立二开并部署了跨境电商网站 bigtallplus.com，把 WordPress / WooCommerce 主题、会员登录、商品展示、购物车、结账和 SiteGround 线上部署串成完整商业链路。这个阶段让我从“做项目”切换到“扛交付”，在高压下训练了快速选型、生产级运维、商业架构和公网交付能力。',
+    tags: ['Competition Explosion', '生产级部署', '商业落地'],
+  },
+  {
+    period: '大二下 · 2026.02 - 2026.07',
+    title: '领袖之姿：主导省级大创与软创项目《稽古云语》全栈研发',
+    description:
+      '以项目负责人身份，我撰写规范化开发文档，主导研发「稽古云语」文物智能识别与对话系统。我设计并实现 Java + Python 双后端解耦架构：Java 负责用户、鉴权、文物库、收藏、反馈和任务状态机，Python 负责 VLM 文物识别、RAG 检索与多轮 AI 对话；同时推动 UniApp 微信小程序和 Android 原生应用落地，支持微信搜索直达与现场真机演示。该项目作为省级大创负责人项目立项，并斩获全国大学生软件创新大赛省级三等奖，集中展现了我的架构设计、AI 工程研发与团队统筹能力。',
+    tags: ['省级大创负责人', '软创省三', '双后端架构'],
+  },
+  {
+    period: '大二下 · 2026.03 - 2026.07',
+    title: '主导设计国赛级 AI Agent 系统，攻克多模态流式交互技术',
+    description:
+      '作为队长，我主导了参加“中国大学生计算机设计大赛（软件与应用开发赛道）”的项目设计与全栈实现。我独立架构了一套 AI Agent 智能体系统，攻克了上下文记忆机制、函数/工具调用（Function Calling）逻辑，并在 Web 端实现了文字、思考过程、流式音频语音与图像结果的多模态低延迟同步呈现。项目成功在公网部署到 cbvjgf.art，并凭借智能体成员化、三层记忆 RAG、工具调用和流式体验，成功推优国赛，成为我竞赛井喷期的黄金里程碑。',
+    tags: ['国赛推优', 'AI Agent', '队长主架构'],
+  },
+  {
+    period: '大二下 · 2026.04 - 2026.07',
+    title: '打破学科边界：主导 7 人团队国风解谜游戏《寻梁》开发',
+    description:
+      '作为核心程序，我参与 7 人跨学科团队（策划、美术、程序），冲刺中国大学生计算机设计大赛数字媒体游戏开发赛道。除负责 Unity 关卡交互、剧情流程、物理解谜和核心逻辑的 C# 编写外，我还敏锐地将 AIGC 引入游戏工作流，客串技术美术与音效师：通过 AI 视频生成工具快速产出剧情转场，并利用 Premiere 和 Audition 独立完成高质量音画剪辑、混音与降噪。在多工种高频协作中展现出工程管线掌控力，最终团队斩获省级二等奖。',
+    tags: ['省级二等奖', 'Unity', 'AIGC 游戏管线'],
+  },
+  {
+    period: '当前 · 2026.05',
+    title: '持续构建个人项目系统',
+    description: '把新的想法、实验、工具和复盘沉淀到同一个长期维护的个人主页中。',
+    tags: ['Now', 'Portfolio', 'Iteration'],
+  },
+  {
+    period: '大二下 · 2026.05 - 2026.07',
+    title: '工程师的成人礼：主导 NebulaCloud 高并发 AI 微服务网关开发',
+    description:
+      '加入技术社团并参与大型微服务系统 NebulaCloud 建设，独立负责其中最核心、高并发的 AI 路由与 API 转发中转站模块（nebula-ai）。在此项目中，我经历了向专业软件工程师的蜕变：首次引入并践行规范的 Git Flow 多人协作与 PR 审查机制；自主编写 GitHub Actions Workflows，跑通了云原生 CI/CD 自动化构建、镜像打包与持续部署管线；通过逆向解构优秀开源项目 new-api，设计并实现了多通道容灾与动态限流算法。该项目作为社团公共基础设施上线，承载了真实活跃的高频流量，彻底打通了我的云原生与大型分布式系统工程视野。',
+    tags: ['核心网关研发', 'DevOps 实践', 'Git Flow', '逆向开源'],
+  },
+  {
+    period: '大二下 · 2026.05 - 2026.08',
+    title: '领跑 FinTech：主导设计国赛级机器学习预测与 AI 研报平台',
+    description:
+      '作为总策划与首席全栈架构师，我全权主导了“花旗杯金融创新应用大赛”推优国赛项目《油擎洞察》的系统设计与全栈落地。我规划并实现多因子驱动机器学习预测与大语言模型协同工作流：用户上传复杂因子表格，系统在后端触发 ML 模型推理，生成多周期收益率预测、分位数风险区间、行业冲击和因子解释，再将结构化结果无缝流转给大模型，实时生成深度金融分析研报并在 Web 端呈现。同时，我正为其部署交互式 AI 金融分析师 Agent 系统。从 Technical Report 技术路线撰写，到算法部署、前后端上线和演示视频制作，我跑通了“量化预测 + AI Agent + 生产级 Web”的极客闭环，并在顶尖金融科技大赛中斩获全国决赛资格。',
+    tags: ['花旗杯推优国赛', '量化预测+大模型', '总策划', 'AI 金融分析师'],
   },
 ]
