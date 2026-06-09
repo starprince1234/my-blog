@@ -5,13 +5,9 @@ import { ref } from 'vue'
 const isOpen = ref(false)
 
 const links = [
-  { label: '首页', href: '/#home' },
-  { label: '关于我', href: '/#about' },
-  { label: '精选项目', href: '/#projects' },
+  { label: '首页', href: '/' },
   { label: '全部项目', href: '/projects' },
-  { label: '技术栈', href: '/#skills' },
-  { label: '时间线', href: '/#timeline' },
-  { label: '联系', href: '/#contact' },
+  { label: '工程图谱', href: '/tech' },
 ]
 
 function closeMenu() {

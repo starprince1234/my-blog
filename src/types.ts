@@ -72,3 +72,48 @@ export interface TimelineItem {
   description: string
   tags: string[]
 }
+
+export type TechCardDifficulty = '入门' | '进阶' | '高级' | '生产级'
+
+export interface TechContentBlock {
+  title: string
+  body?: string
+  items?: string[]
+}
+
+export interface TechDomainRoute {
+  domain: string
+  role: string
+}
+
+export interface TechArchitectureNode {
+  name: string
+  role: string
+  tools: string[]
+}
+
+export interface TechCard {
+  id: string
+  title: string
+  subtitle?: string
+  description: string
+  category: string
+  tags: string[]
+  difficulty?: TechCardDifficulty
+  readTime?: string
+  date?: string
+  slug: string
+  featured?: boolean
+  highlights?: string[]
+  stack?: string[]
+  architecture?: TechArchitectureNode[]
+  routes?: TechDomainRoute[]
+  content?: {
+    scenario: string
+    goals: string[]
+    sections: TechContentBlock[]
+    deploymentFlow: string[]
+    expansion: string[]
+    notes?: string[]
+  }
+}
